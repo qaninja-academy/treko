@@ -1,0 +1,30 @@
+{
+  "name": "ntask",
+  "version": "1.0.0",
+  "description": "API para cadastro de tarefas",
+  "main": "app.js",
+  "scripts": {
+    "start": "babel-node app.js",
+    "dev": "nodemon --exec babel-node app.js"
+  },
+  "keywords": [
+    "qaninja",
+    "api",
+    "automação full stack",
+    "node"
+  ],
+  "author": "Fernando Papito",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.5",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.20"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "nodemon": "^1.19.1"
+  }
+}
