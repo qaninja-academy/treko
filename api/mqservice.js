@@ -13,10 +13,12 @@ amqp.connect(CONN_URL, function (err, conn) {
 
 export const publishToQueue = async (queueName, data) => {
     await ch.assertQueue(queueName, { durable: true });
-    await ch.sendToQueue(queueName, Buffer.from(data) );
+    await ch.sendToQueue(queueName, Buffer.from(data));
 }
 
 process.on('exit', (code) => {
-    ch.close();
-    console.log(`Closing rabbitmq channel`);
+    if (typeof cn != 'undefined') {
+        ch.close();
+        console.log(`Closing rabbitmq channel`);
+    }
 });
