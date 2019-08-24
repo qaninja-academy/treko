@@ -28,7 +28,7 @@ app.post('/task', crud.create)
 app.put('/task/:id', crud.update)
 
 app.listen(3000, () => {
-    console.log("NTask está no AR!");
+    console.log("Treko API está no AR!");
 });
 
 module.exports = app;
