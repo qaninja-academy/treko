@@ -21,4 +21,4 @@ docker run -d --hostname my-rabbit --name rabbit13 -p 15672:15672 -p 5672:5672 -
 
 # Exemplo da Integração
 
-![Alt text](relative/path/to/img.jpg?raw=true "Exemplo")
+![Alt text](docs/Treko.jpg?raw=true "Exemplo")
