@@ -1,5 +1,5 @@
 {
-  "name": "ntask",
+  "name": "treko",
   "version": "1.0.0",
   "description": "API para cadastro de tarefas",
   "main": "app.js",
